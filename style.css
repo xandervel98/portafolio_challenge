@@ -1,0 +1,658 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #0B3954;
+    --color-de-fondo-alterno: #087E8B;
+    --color-de-link: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    background-color: var(--color-de-fondo);
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    width: 100%;
+    font-weight: 500;
+}
+
+.cabecera__texto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera__logo {
+    max-width: 24px; 
+}
+
+.cabecera__titulo {
+    font-size: 1rem;
+    margin-left: 16px;
+}
+
+.navegacion__elemento {
+    list-style: none;
+    display: none; 
+}
+
+
+.navegacion__elemento a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navegacion__lista {
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+}
+
+.navegacion__lista :nth-child(6) {
+    font-weight: bold; 
+}
+
+.navegacion__elemento:nth-child(6) {
+    display: flex;
+}
+
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    background-color: var(--color-de-fondo);
+    width: 100%;
+    padding: 48px 32px;
+    overflow: hidden;
+}
+
+.presentacion__contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.presentacion__titulo {
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
+.presentacion__subtitulo {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.redes__img {
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: 500;
+    gap: 4px;
+}
+
+.redes__img a {
+    color: #ffffff; 
+}
+
+.presentacion__foto {
+    border-radius: 50%;
+    width: 98px;
+    height: 98px;
+}
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+.sobre-mi {
+    width: 100%;
+    background-color: var(--color-de-fondo-alterno);
+    padding: 48px 32px;
+}
+
+.sobre-mi__titulo {
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
+.sobre-mi__texto {
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+.habilidades {
+    width: 100%;
+    padding: 48px 32px;
+}
+
+.habilidades__titulo {
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
+.habilidades__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.habilidades__elemento {
+    color: #000000;
+    width: 150px;
+    height: 118px;
+  
+    background-color: #ffffff;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+.habilidades__icono {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+.habilidades__nombre {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+.aficiones {
+    width: 100%;
+    padding: 48px 32px;
+}
+
+.aficiones__titulo {
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
+.aficiones__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.aficiones__elemento {
+    color: #000000;
+    width: 150px;
+    height: 118px;
+  
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+.aficiones__icono {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+.aficiones__nombre {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/*------------------------------ Formación Académica --------------------------------*/
+
+.formacion {
+    background-color: var(--color-de-fondo-alterno);
+    width: 100%;
+    padding: 48px 32px;
+    padding-bottom: 140px;
+}
+
+.formacion__titulo {
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
+.formacion__lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 64px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.formacion__elemento {
+    height: 169px;
+    width: 296px;
+    padding: 32px;
+}
+
+.formacion__icono {
+    width: 100%;
+    height: 118px;
+}
+
+.formacion__nombre {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+.proyectos {
+    width: 100%;
+    padding: 48px 32px;
+}
+
+.proyectos__titulo {
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
+.proyectos__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 80px;
+}
+
+.proyectos__imagen__contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.proyectos__imagen {
+    width: 100%;
+}
+
+.proyectos__texto {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.proyectos__nombre {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.proyectos__descripcion {
+    margin-top: 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.proyectos__botones {
+    display: flex;
+    gap: 16px;
+}
+
+.btn_repositorio {
+    background-color: var(--color-de-fondo);
+    border-radius: 5%;
+    border-color: #0496ff;
+    border-width: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 51px;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 18px 24px;
+}
+
+.btn_repositorio:hover {
+    background-color: #7d8597;
+}
+
+
+.btn_demo {
+    background-color: #0496ff;
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 51px;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 18px 24px;
+}
+
+.btn_demo:hover {
+    background-color: #7d8597;
+}
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+.contacto {
+    background-color: var(--color-de-fondo-alterno);
+    width: 100%;
+    padding: 48px 32px;
+}
+
+.contacto__imagen {
+    display: none;
+}
+
+.contenedor__contacto {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.contacto__titulo {
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__formulario p {
+    margin-top: 0;
+}
+
+.contacto__campo {
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.contacto__textarea {
+    height: 133px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 32px;
+    resize: none;
+}
+
+.contacto__boton {
+    background-color: #0496ff;
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #ffffff;
+    height: 54px;
+    padding: 8px 15px;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contacto__boton:hover {
+    background-color: #7d8597;
+}
+
+/* ------------------------------ Footer ---------------------------------------*/
+
+.footer {
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: var(--color-de-fondo);
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px){
+    
+    .presentacion {
+        flex-direction: row-reverse;
+    }
+
+    .presentacion__subtitulo {
+        font-size: 1rem;
+    }
+    
+    .presentacion__foto {
+        width: 146px;
+        height: 146px; 
+    }
+
+    .habilidades__elemento {
+        width: 220px;
+    }
+
+    .aficiones__elemento {
+        width: 220px;
+    }
+
+    .formacion__lista {
+        flex-direction: row;
+    }
+
+    .formacion__elemento {
+        width: 224px;
+        justify-content: center;
+    }
+
+    .formacion__icono {
+        width: 224px;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    
+    .cabecera {
+        margin: 0%;
+        padding-left: 152px;
+        padding-right: 152px;
+    }
+
+    .navegacion__elemento {
+        display: flex;
+    }
+
+    .presentacion {
+        padding-left: 152px;
+        justify-content: space-between;
+    }
+
+    .presentacion__contenedor{
+        margin: 0%;
+        padding: 0%;
+        max-width: 1000px;
+    }
+
+    .presentacion__titulo {
+        font-size: 3.25rem;
+    }
+
+    .presentacion__subtitulo {
+        margin-top: 0%;
+        font-size: 1.375rem;
+    }
+
+    .presentacion__foto {
+        width: 368px;
+        height: 368px;
+    }
+
+    .redes {
+        justify-content: flex-start;
+        width: 100%;
+        gap: 100px;
+    }
+    
+    .redes__img {
+        font-size: 1rem;
+    }
+
+    .sobre-mi {
+        padding-left: 152px;
+        padding-right: 152px;
+    }
+
+    .sobre-mi__titulo {
+        font-size: 2rem;
+    }
+
+    .sobre-mi__texto {
+        max-width: 800px;
+        font-size: 1rem;
+    }
+
+    .habilidades {
+        padding-left: 152px;
+        padding-right: 152px;
+    }
+
+    .habilidades__titulo {
+        font-size: 2rem;
+    }
+
+    .habilidades__elemento {
+        flex-grow: 0;
+        width: 176px;
+        height: 174px;
+    }
+
+    .aficiones {
+        padding-left: 152px;
+        padding-right: 152px;
+    }
+
+    .aficiones__titulo {
+        font-size: 2rem;
+    }
+
+    .aficiones__elemento {
+        flex-grow: 0;
+        width: 176px;
+        height: 174px;
+    }
+
+    .formacion {
+        padding-left: 152px;
+        padding-right: 152px;
+        padding-bottom: 200px;
+    }
+
+    .formacion__titulo {
+        font-size: 2rem;
+    }
+
+    .formacion__lista {
+        flex-direction: row;
+    }
+
+    .formacion__elemento {
+        width: 368px;
+        height: 347px;
+        flex-grow: 0;
+    }
+
+    .formacion__icono {
+        width: 368px;
+        height: 347px;
+    }
+
+    .formacion__nombre {
+        font-size: 1.375rem;
+    }
+
+    .proyectos {
+        padding-left: 152px;
+        padding-right: 152px;
+    }
+
+    .proyectos__titulo {
+        font-size: 2rem;
+    }
+
+    .proyectos__contenedor {
+        flex-direction: row;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .proyectos__contenedor:nth-of-type(2) {
+        flex-direction: row-reverse;
+    }
+
+    .proyectos__imagen {
+        width: 752px;
+    }
+
+    .proyectos__texto {
+        justify-content: center;
+    }
+
+    .proyectos__imagen__contenedor {
+        flex-grow: 0;
+    }
+
+    .contacto {
+        padding: 80px 152px;
+    }
+
+    .contacto__imagen {
+        display: block;
+    }
+}
